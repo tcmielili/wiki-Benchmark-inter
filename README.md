@@ -19,7 +19,7 @@ Primero divide la lista original en dos mitades. Después, cada mitad se vuelve 
 
 Por ejemplo:
 
-```text
+
 Lista original:
 [8, 3, 5, 1]
 
@@ -70,3 +70,10 @@ Aunque los datos estén completamente desordenados, el algoritmo mantiene un ren
 **O(n)**
 
 El algoritmo necesita memoria adicional para almacenar las listas temporales que se generan durante el proceso de intercalación.
+## Comparativa teórica contra Bubble Sort
+
+El ordenamiento por Intercalación o Merge Sort es más eficiente que Bubble Sort cuando se trabaja con una gran cantidad de datos. Merge Sort utiliza la estrategia de dividir y vencer, separando la lista en partes más pequeñas y después uniéndolas de forma ordenada. En cambio, Bubble Sort compara elementos vecinos e intercambia sus posiciones si están en el orden incorrecto.
+
+En cuanto a complejidad, Merge Sort tiene un rendimiento de **O(n log n)** en el mejor caso, caso promedio y peor caso. Por otro lado, Bubble Sort tiene una complejidad promedio y peor caso de **O(n²)**, por lo que se vuelve mucho más lento cuando aumenta la cantidad de elementos.
+
+Una ventaja de Bubble Sort es que es más fácil de entender e implementar. Sin embargo, para listas grandes, como una lista de 50,000 números, Merge Sort es una mejor opción porque mantiene un rendimiento más estable y rápido.
